@@ -14,44 +14,43 @@
     <form
      action="https://mate-academy-form-lesson.herokuapp.com/create-application"
      method="post"
-     class="form">
+     class="form"
+    >
       <fieldset class="fieldset">
-
         <legend>Personal information</legend>
-
-        <label for="sname" class="form-field">
+        <label class="form-field">
           Surname:
           <input
-           type="text"
-           name="surname"
-           autocomplete="off"
-           minlength="1"
-           maxlength="40"
+            type="text"
+            name="surname"
+            autocomplete="off"
+            minlength="1"
+            maxlength="40"
           >
         </label>
 
-        <label for="lname" class="form-field">
+        <label class="form-field">
           Name:
           <input
-           type="text"
-           name="nameUser"
-           autocomplete="off"
-           required
+            type="text"
+            name="userName"
+            autocomplete="off"
+            required
           >
         </label>
 
-        <label for="years" class="form-field">
+        <label class="form-field">
           How old are You?
           <input
-           type="number"
-           name="userUser"
-           min="1"
-           max="100"
-           value="12"
+            type="number"
+            name="userUser"
+            min="1"
+            max="100"
+            value="12"
           >
         </label>
 
-        <label for="birthday" class="form-field">
+        <label class="form-field">
           Full date of birth:
           <input type="date" name="birthday">
         </label>
@@ -59,124 +58,88 @@
         <label class="form-field">
           I accept the term of the agreement
           <input
-           type="checkbox"
-           name="checking"
+            type="checkbox"
+            name="checking"
           >
         </label>
-
       </fieldset>
 
       <fieldset class="fieldset">
-
         <legend>Registration</legend>
-
         <label for="email" class="form-field">
-
           E-mail:
           <input
-           type="email"
-           name="mailUser"
-           placeholder="email@example.com"
+            type="email"
+            name="mailUser"
+            placeholder="email@example.com"
           >
-
         </label>
 
-        <label for="password" class="form-field">
+        <label class="form-field">
           Password:
           <input
-           type="password"
-           name="passwordUser"
+            type="password"
+            name="passwordUser"
           >
         </label>
-
       </fieldset>
 
       <fieldset class="fieldset">
-
         <legend>An interesting fact about you!</legend>
-
-        <label for="qstAboutCat" class="form-field">
-
+        <label class="form-field">
           Do you love cats?
           <input type="radio" name="chooseY">
           Yes
           <input type="radio" name="chooseN">
           No
-
         </label>
 
-        <label for="color" class="form-field">
-
+        <label class="form-field">
           What is your favorite color?
           <input type="color" name="colorChose">
-
         </label>
 
-        <label for="time" class="form-field">
-
+        <label class="form-field">
           What time do you go to bed?
           <input type="time" name="time">
-
         </label>
 
-        <label for="cars" class="form-field">
-
+        <label class="form-field">
           What are your favorite brands of cars?
-
           <select name="cars" multiple>
-
             <option value="BMW">BMW</option>
             <option value="Audi">Audi</option>
             <option value="Lada">Lada</option>
-
           </select>
-
         </label>
 
-        <label for="range" class="form-field">
-
+        <label class="form-field">
           How do you rate our work?
           <input type="range" name="range">
-
         </label>
-
       </fieldset>
 
       <fieldset class="fieldset">
-
         <legend>Additional info</legend>
-
-        <label for="comment" class="form-field">
-
+        <label class="form-field">
           Comments:
-
           <textarea
-           name="comment"
-           cols="20"
-           rows="2">
+            name="comment"
+            cols="20"
+            rows="2">
           </textarea>
-
         </label>
 
-        <label for="recommend" class="form-field">
-
+        <label class="form-field">
           Would you recommend us?
-
           <select name="chooseYesOrNo">
-
             <option value="yes">yes</option>
             <option value="no">no</option>
-
           </select>
-
         </label>
-
       </fieldset>
 
       <button type="submit">Submit</button>
-
     </form>
-
   </body>
-
 </html>
